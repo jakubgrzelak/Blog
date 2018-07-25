@@ -11,8 +11,8 @@ export default class UserPost extends React.Component {
     render () {
         return (
             <div className="post-entry">
-                <h3 className="post-title">{this.props.title}</h3>
-                <span id={this.props.id}></span>
+                <h3>{this.props.title}</h3>
+                <p id={this.props.id}></p>
                 <h5>{moment(this.props.createdAt).format('MMMM Do, YYYY')}</h5>
             </div>
         );

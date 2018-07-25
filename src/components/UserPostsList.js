@@ -13,7 +13,7 @@ class UserPostsList extends React.Component {
             {
                 this.props.posts.length === 0 ? (
                   <div  >
-                    <span>No expenses</span>
+                    <span>No posts</span>
                   </div>
               
                 ) : (

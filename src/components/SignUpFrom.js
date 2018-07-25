@@ -4,6 +4,7 @@ import { withFormik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
 
+
 export const SignUpForm =  ({ 
     errors,
     touched,
@@ -11,7 +12,7 @@ export const SignUpForm =  ({
 }) => (
     <div>        
         <div className="content-container">
-            <Form className="form">
+            <Form className="form" id="signUp">
                 <h1>Sign Up Now!<span>Share your passion to Dolomites with others!</span></h1>
                 <div className="form__input-group">
                     <div>
