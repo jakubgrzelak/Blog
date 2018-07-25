@@ -1,0 +1,17 @@
+.post-entry {
+    font-family: 'Eczar', serif;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: $s-size;
+    margin-top: $s-size;
+    max-height: 200px;
+    word-wrap: inherit;
+    overflow:hidden;
+}
+
+.post-title {
+    width: 100%;
+    background: $off-white;
+    font-size: $font-size-large;
+    text-align: center;
+}
