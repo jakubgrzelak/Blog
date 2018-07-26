@@ -1,4 +1,4 @@
-import React, { PropTypes} from 'react'; 
+import React from 'react'; 
 import { connect } from 'react-redux';
 import { startSavePost } from '../actions/posts';
 import RichTextEditor from 'react-rte';
@@ -7,10 +7,9 @@ import RichTextEditor from 'react-rte';
 class  CreatePost extends React.Component {
   
     state = {
-        title: '',
-        value: RichTextEditor.createEmptyValue(),
-        author: '',
-        htmlElement: ''
+        title: this.props.post ? this.props.post.title : '',
+        value: this.props.post ? RichTextEditor.createValueFromString(this.props.post.htmlString, 'html') : RichTextEditor.createEmptyValue(),
+        author: this.props.post ? this.props.post.author : ''
     }
 
     onChange = (value) => {

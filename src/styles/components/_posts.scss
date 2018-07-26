@@ -3,14 +3,10 @@
     margin-bottom: $s-size;
     margin-top: $s-size;
     max-height: 200px;
-    word-wrap: inherit;
-    overflow:hidden;
-    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
 }
 
-.post-title {
-    width: 100%;
-  
-    font-size: $font-size-large;
-    text-align: center;
-}
+

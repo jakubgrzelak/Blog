@@ -1,5 +1,6 @@
 import React from 'react';
-import moment from 'moment';
+import { Link } from 'react-router-dom';
+
 export default class UserPost extends React.Component {
     convertStringToHtml(htmlString) {
         return JSON.parse(htmlString);
@@ -11,9 +12,8 @@ export default class UserPost extends React.Component {
     render () {
         return (
             <div className="post-entry">
-                <h3>{this.props.title}</h3>
+                <Link to={`/edit-post/${this.props.id}`}><h3>{this.props.title}</h3></Link>
                 <p id={this.props.id}></p>
-                <h5>{moment(this.props.createdAt).format('MMMM Do, YYYY')}</h5>
             </div>
         );
     }

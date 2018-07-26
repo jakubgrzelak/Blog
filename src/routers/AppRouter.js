@@ -10,7 +10,7 @@ import PublicRoute from './PublicRoute';
 import SignIn from '../components/SignIn';
 import SignUpPage from '../components/SignUpPage';
 import UserPostsList from '../components/UserPostsList';
-
+import EditPost from '../components/EditPost';
 export const history = createHistory();
 
 const AppRouter = () => (
@@ -23,6 +23,7 @@ const AppRouter = () => (
         <PrivateRoute path="/dashboard" component={DashboardPage} />
         <PrivateRoute path="/create-post" component={CreatePost} />
         <PrivateRoute path="/user-posts" component={UserPostsList} />
+        <PrivateRoute path="/edit-post/:id" component={EditPost} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

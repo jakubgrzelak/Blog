@@ -9,13 +9,17 @@ class DashboardPage extends React.Component {
 
   render () {
     return (
-    <div className="content-container">
-        <div className="form">
-          <h3>Here you can browse and create your posts. Remember, your post should be pleasent to read and be as informative as possible. 
-          Everybody here loves mountains and I am certain that you too! Share your passion and ideas. Together we will build
-          community that certainly will enrich knowledge and passion</h3>
+      <div className="dashboard">
+        <div className="separator"></div>
+        <div className="content-container">
+            <div className="form">
+              <h3>Here you can browse and create your posts. Remember, your post should be pleasent to read and be as informative as possible. 
+              Everybody here loves mountains and I am certain that you too! Share your passion and ideas. Together we will build
+              community that certainly will enrich knowledge and passion</h3>
+            </div>
         </div>
-    </div>
+      </div>
+    
     );
   }
 }
